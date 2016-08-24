@@ -28,21 +28,7 @@ var s = require('../global/style');
 
 class NonSevereSepsis extends Component {
 
-  handleFormChange(formData){
-    /*
-    formData will contain all the values of the form,
-    in this example.
  
-    formData = {
-      first_name:"",
-      last_name:"",
-      gender: '',
-      birthday: Date,
-      has_accepted_conditions: bool
-    }
-     */
- 
-   }
 
   navigate(routeName) {
     this.props.navigator.push({
@@ -114,7 +100,7 @@ class NonSevereSepsis extends Component {
             
               <ScrollView style={s.gridTainer}>
             
-                <View style={s.optionSetContainer}>
+                <View style={s.optionSetContainerNoBorder}>
                     <Text style={s.optionSetTitle}>This patient's Sepsis is not severe.</Text>
                 </View>
                 
@@ -140,7 +126,7 @@ class NonSevereSepsis extends Component {
                     <Text style={s.yesNo}>Yes</Text>
                   </View>
                   
-                  // IF YES, NEED TEXT INPUT FIELD FOR MEDICATIONS
+                  
                   
                   
                 </Form>

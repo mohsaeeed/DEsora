@@ -166,6 +166,12 @@ class StrokeStepOne extends Component {
                     <SwitchField label='' ref="lastKnownNormal"/>
                     <Text style={s.yesNo}>Yes</Text>
                   </View>
+                  <View style={s.yesNoContainer}>
+                    <DatePickerField ref='lastKnownNormalTime'
+                      minimumDate={new Date('8/1/2016')}
+                      maximumDate={new Date()} mode='datetime' placeholder='Choose Time       '
+                      />
+                  </View>
                 </Form>
                 
                 <View style={s.optionSetContainer}>

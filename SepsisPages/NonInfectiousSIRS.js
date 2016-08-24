@@ -116,7 +116,7 @@ class NonInfectiousSIRS extends Component {
             
             <ScrollView style={s.gridTainer}>
                 
-                <View style={s.optionSetContainer}>
+                <View style={s.optionSetContainerNoBorder}>
                     <Text style={s.optionSetTitle}>This patient has non-infectious SIRS</Text>
                     <Text style={s.optionSetTitle}>Select any causes that apply:</Text>
                 </View>

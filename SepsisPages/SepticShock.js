@@ -120,7 +120,7 @@ class SepticShock extends Component {
             
               <ScrollView style={s.gridTainer}>
             
-                <View style={s.optionSetContainer}>
+                <View style={s.optionSetContainerNoBorder}>
                     <Text style={s.optionSetTitle}>Treatment for Septic Shock</Text>
                     <Text style={s.minorText}>TO BE COMPLETED WITHIN 6 HOURS</Text>
                 </View>

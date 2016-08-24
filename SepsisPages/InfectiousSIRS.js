@@ -133,7 +133,7 @@ class InfectiousSIRS extends Component {
             
               <ScrollView style={s.gridTainer}>
             
-                <View style={s.optionSetContainer}>
+                <View style={s.optionSetContainerNoBorder}>
                     <Text style={s.optionSetTitle}>This patient has Sepsis</Text>
                     <Text style={s.optionSetTitle}>Select any causes that apply:</Text>
                 </View>
@@ -141,7 +141,7 @@ class InfectiousSIRS extends Component {
                 
                 
                 
-                <View style={s.optionSetContainer}>
+                <View style={s.optionSetContainerFullBorder}>
                     <Text style={s.headingTitle}>Respiratory</Text>
                 </View>
                 <View style={s.optionSetContainer}>
@@ -181,7 +181,7 @@ class InfectiousSIRS extends Component {
                 
                 
                 
-                <View style={s.optionSetContainer}>
+                <View style={s.optionSetContainerFullBorder}>
                     <Text style={s.headingTitle}>Cardiovascular</Text>
                 </View>
                 <View style={s.optionSetContainer}>
@@ -211,7 +211,7 @@ class InfectiousSIRS extends Component {
                 
                 
                 
-                <View style={s.optionSetContainer}>
+                <View style={s.optionSetContainerFullBorder}>
                     <Text style={s.headingTitle}>Abdominal</Text>
                 </View>
                 <View style={s.optionSetContainer}>
@@ -284,7 +284,7 @@ class InfectiousSIRS extends Component {
                 
                 
                 
-                <View style={s.optionSetContainer}>
+                <View style={s.optionSetContainerFullBorder}>
                     <Text style={s.headingTitle}>Urinary</Text>
                 </View>
                 <View style={s.optionSetContainer}>
@@ -323,7 +323,7 @@ class InfectiousSIRS extends Component {
                 
                 
                 
-                <View style={s.optionSetContainer}>
+                <View style={s.optionSetContainerFullBorder}>
                     <Text style={s.headingTitle}>Gynecologic</Text>
                 </View>
                 <View style={s.optionSetContainer}>
@@ -352,7 +352,7 @@ class InfectiousSIRS extends Component {
                 
                 
                 
-                <View style={s.optionSetContainer}>
+                <View style={s.optionSetContainerFullBorder}>
                     <Text style={s.headingTitle}>CNS</Text>
                 </View>
                 <View style={s.optionSetContainer}>

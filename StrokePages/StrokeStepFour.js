@@ -18,7 +18,7 @@ import {
 } from 'react-native';
 import { Form, InputField,
         Separator, SwitchField, LinkField ,
-        PickerField, DatePickerField
+        PickerFieldBasic, DatePickerField
       } from 'react-native-form-generator';
 
 // Global Stylesheet
@@ -89,10 +89,9 @@ class StrokeStepFour extends Component {
               </View>
             </View>
         <ScrollView style={s.gridTainer}>
-            <View style={s.optionSetContainer}>
-                <Text style={s.optionSetTitle}>{p2q4q1}</Text>
+            <View>
                 <Form ref="ctHeadResults" style={s.pickerTainer}>
-                  <PickerField ref='ctHeadResults' placeholder='+0' value="+0" label={p2q4q1} style={s.optionText}
+                  <PickerFieldBasic ref='ctHeadResults' placeholder='+0' value="+0" label={p2q4q1} style={s.optionText}
                       options={{
                         0: 'Normal',
                         1: 'Hemhorage',
@@ -104,10 +103,9 @@ class StrokeStepFour extends Component {
                 </Form>
             </View>
             
-            <View style={s.optionSetContainer}>
-                <Text style={s.optionSetTitle}>{p2q4q2}</Text>
+            <View>
                 <Form ref="plateletCount" style={s.pickerTainer}>
-                  <PickerField ref='plateletCount' placeholder='+0' value="+0" label={p2q4q2} style={s.optionText}
+                  <PickerFieldBasic ref='plateletCount' placeholder='+0' value="+0" label={p2q4q2} style={s.optionText}
                       options={{
                         0: 'Yes',
                         1: 'No',
@@ -117,10 +115,9 @@ class StrokeStepFour extends Component {
                 </Form>
             </View>
             
-            <View style={s.optionSetContainer}>
-                <Text style={s.optionSetTitle}>{p2q4q3}</Text>
+            <View>
                 <Form ref="INR" style={s.pickerTainer}>
-                  <PickerField ref='INR' placeholder='+0' value="+0" label={p2q4q3} style={s.optionText}
+                  <PickerFieldBasic ref='INR' placeholder='+0' value="+0" label={p2q4q3} style={s.optionText}
                       options={{
                         0: 'Yes',
                         1: 'No',
@@ -132,25 +129,27 @@ class StrokeStepFour extends Component {
             
             <View style={s.optionSetContainer}>
                 <Text style={s.optionSetTitle}>{p2q4q4}</Text>
-                <Form ref='bloodGlucoseCorrected' style={s.optionSetInputYN}>
-                  <View style={s.yesNoContainer}>
-                    <Text style={s.yesNo}>No</Text>
-                    <SwitchField label='' ref="bloodGlucoseCorrected"/>
-                    <Text style={s.yesNo}>Yes</Text>
-                  </View>
-                </Form>
             </View>
+            <Form ref='bloodGlucoseCorrected' style={s.optionSetInputYN}>
+              <View style={s.yesNoContainer}>
+                <Text style={s.yesNo}>No</Text>
+                <SwitchField label='' ref="bloodGlucoseCorrected"/>
+                <Text style={s.yesNo}>Yes</Text>
+              </View>
+            </Form>
+            
             
             <View style={s.optionSetContainer}>
                 <Text style={s.optionSetTitle}>{p2q4q5}</Text>
-                <Form ref='bloodPressureCorrected' style={s.optionSetInputYN}>
-                  <View style={s.yesNoContainer}>
-                    <Text style={s.yesNo}>No</Text>
-                    <SwitchField label='' ref="bloodPressureCorrected"/>
-                    <Text style={s.yesNo}>Yes</Text>
-                  </View>
-                </Form>
             </View>
+            <Form ref='bloodPressureCorrected' style={s.optionSetInputYN}>
+              <View style={s.yesNoContainer}>
+                <Text style={s.yesNo}>No</Text>
+                <SwitchField label='' ref="bloodPressureCorrected"/>
+                <Text style={s.yesNo}>Yes</Text>
+              </View>
+            </Form>
+            
             
             <TouchableHighlight onPress={ this.navigate.bind(this, 'IVTPA') } style={s.buttonBlue}>
                 <Text style={s.whiteText}>Continue</Text>

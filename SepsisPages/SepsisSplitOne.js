@@ -114,7 +114,7 @@ class SepsisSplitOne extends Component {
             
               <ScrollView style={s.gridTainer}>
             
-                <View style={s.optionSetContainer}>
+                <View style={s.optionSetContainerNoBorder}>
                     <Text style={s.optionSetTitle}>This patient has SIRS.</Text>
                     <Text style={s.optionSetTitle}>Now we need to determine whether the SIRS is infectious (Sepsis) or non-infectious.</Text>
                 </View>
@@ -122,16 +122,16 @@ class SepsisSplitOne extends Component {
                 <View style={s.optionSetContainer}>
                     <Text style={s.optionSetTitle}>Does the patient have active infection or suspected source of infection?</Text>
                 </View>
-                <Form ref='mentalStatus' style={s.optionSetInputYN}>
+                <Form ref='activeInfection' style={s.optionSetInputYN}>
                   <View style={s.yesNoContainer}>
                     <Text style={s.yesNo}>No</Text>
-                    <SwitchField label='' ref="mentalStatus"/>
+                    <SwitchField label='' ref="activeInfection"/>
                     <Text style={s.yesNo}>Yes</Text>
                   </View>
                 </Form>
                 
-                <TouchableHighlight onPress={ this.navigate.bind(this, 'SepsisTwo') } style={s.optionButton}>
-                    <Text style={s.optionText}>Continue with Sepsis</Text>
+                <TouchableHighlight onPress={ this.navigate.bind(this, 'SepsisTwo') } style={s.buttonBlue}>
+                    <Text style={s.whiteText}>Continue</Text>
                 </TouchableHighlight>
                 
               </ScrollView>

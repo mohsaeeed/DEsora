@@ -89,56 +89,66 @@ class StrokeStepThree extends Component {
                 <Text style={s.optionSetTitle}>CT Head (Non-Contrast)</Text>
                 <Text style={s.redText}>Run within 25 minutes of arrival</Text>
                 <Text style={s.minorText}>Eval for Hemmorhagic Bleed/Subacute Stroke > 1/3 MCA territory/Tumor</Text>
-                <Form ref='ctHead' style={s.optionSetInputYN}>
-                  <View style={s.yesNoContainer}>
-                    <SwitchField label='' ref="ctHead"/>
-                  </View>
-                </Form>
             </View>
+            <Form ref='ctHead' style={s.optionSetInputYN}>
+              <View style={s.yesNoContainer}>
+                <Text style={s.yesNo}>No</Text>
+                <SwitchField label='' ref="ctHead"/>
+                <Text style={s.yesNo}>Yes</Text>
+              </View>
+            </Form>
             
             <View style={s.optionSetContainer}>
                 <Text style={s.optionSetTitle}>Creatanine</Text>
                 <Text style={s.redText}>Run within 10 minutes of arrival</Text>
                 <Text style={s.minorText}>Screen for further imaging with contrast-intra-arterial angiogram, MR with contrast</Text>
-                <Form ref='creatine' style={s.optionSetInputYN}>
-                  <View style={s.yesNoContainer}>
-                    <SwitchField label='' ref="creatine"/>
-                  </View>
-                </Form>
             </View>
+            <Form ref='creatine' style={s.optionSetInputYN}>
+              <View style={s.yesNoContainer}>
+                <Text style={s.yesNo}>No</Text>
+                <SwitchField label='' ref="creatine"/>
+                <Text style={s.yesNo}>Yes</Text>
+              </View>
+            </Form>
             
             <View style={s.optionSetContainer}>
                 <Text style={s.optionSetTitle}>Coagulation Studies</Text>
                 <Text style={s.redText}>Run within 10 minutes of arrival</Text>
                 <Text style={s.minorText}>Greater than 1.7 INR exclusion of TPA</Text>
-                <Form ref='coagulationStudies' style={s.optionSetInputYN}>
-                  <View style={s.yesNoContainer}>
-                    <SwitchField label='' ref="coagulationStudies"/>
-                  </View>
-                </Form>
             </View>
+            <Form ref='coagulationStudies' style={s.optionSetInputYN}>
+              <View style={s.yesNoContainer}>
+                <Text style={s.yesNo}>No</Text>
+                <SwitchField label='' ref="coagulationStudies"/>
+                <Text style={s.yesNo}>Yes</Text>
+              </View>
+            </Form>
             
             <View style={s.optionSetContainer}>
                 <Text style={s.optionSetTitle}>Blood Glucose Level</Text>
                 <Text style={s.redText}></Text>
                 <Text style={s.minorText}>Potential for stroke-like symptoms</Text>
-                <Form ref='bloodGlucoseLevel' style={s.optionSetInputYN}>
-                  <View style={s.yesNoContainer}>
-                    <SwitchField label='' ref="bloodGlucoseLevel"/>
-                  </View>
-                </Form>
             </View>
+            <Form ref='bloodGlucoseLevel' style={s.optionSetInputYN}>
+              <View style={s.yesNoContainer}>
+                <Text style={s.yesNo}>No</Text>
+                <SwitchField label='' ref="bloodGlucoseLevel"/>
+                <Text style={s.yesNo}>Yes</Text>
+              </View>
+            </Form>
             
             <View style={s.optionSetContainer}>
                 <Text style={s.optionSetTitle}>Blood Pressure</Text>
                 <Text style={s.redText}></Text>
                 <Text style={s.minorText}>Potential for stroke-like symptoms</Text>
-                <Form ref='bloodPressure' style={s.optionSetInputYN}>
-                  <View style={s.yesNoContainer}>
-                    <SwitchField label='' ref="bloodPressure"/>
-                  </View>
-                </Form>
             </View>
+            <Form ref='bloodPressure' style={s.optionSetInputYN}>
+              <View style={s.yesNoContainer}>
+                <Text style={s.yesNo}>No</Text>
+                <SwitchField label='' ref="bloodPressure"/>
+                <Text style={s.yesNo}>Yes</Text>
+              </View>
+            </Form>
             
             <TouchableHighlight onPress={ this.navigate.bind(this, 'Stroke') } style={s.buttonBlue}>
                 <Text style={s.whiteText}>Continue</Text>

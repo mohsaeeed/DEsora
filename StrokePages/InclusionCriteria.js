@@ -55,22 +55,8 @@ class InclusionCriteria extends Component {
                         />
                     </TouchableHighlight>
                 </View>
-                <View style={s.buttonWrapTitle}>
+                <View style={s.buttonWrapTitleFull}>
                     <Text style={s.title}>Inclusion Criteria</Text>
-                </View>
-                <View style={s.buttonWrapTopButton}>
-                    <TouchableHighlight onPress={ this.navigate.bind(this, 'Main') } style={s.button}>
-                        <Image
-                          source={require('../assets/icons/HomeIcon.png')}
-                        />
-                    </TouchableHighlight>
-                </View>
-                <View style={s.buttonWrapTopButton}>
-                    <TouchableHighlight onPress={ this.navigate.bind(this, 'Report') } style={s.button}>
-                        <Image
-                          source={require('../assets/icons/SOFAbutton.png')}
-                        />
-                    </TouchableHighlight>
                 </View>
             </View>
         </View>

@@ -114,19 +114,19 @@ class SepsisResults extends Component {
             
               <ScrollView style={s.gridTainer}>
             
-                <View style={s.optionSetContainer}>
+                <View style={s.optionSetContainerNoBorder}>
                     <Text style={s.optionSetTitle}>Patient should be closely monitored for next 24-48 hours to assess clinical judgement.</Text>
                 </View>
                 
-                <TouchableHighlight onPress={ this.navigate.bind(this, 'Report') } style={s.optionButton}>
+                <TouchableHighlight onPress={ this.navigate.bind(this, 'Report') } style={s.optionButtonSingle}>
                     <Text style={s.optionText}>View Results</Text>
                 </TouchableHighlight>
                 
-                <TouchableHighlight onPress={ this.navigate.bind(this, 'Sepsis') } style={s.optionButton}>
+                <TouchableHighlight onPress={ this.navigate.bind(this, 'Sepsis') } style={s.optionButtonSingle}>
                     <Text style={s.optionText}>Sepsis Progress</Text>
                 </TouchableHighlight>
                 
-                <TouchableHighlight onPress={ this.navigate.bind(this, 'Main') } style={s.optionButton}>
+                <TouchableHighlight onPress={ this.navigate.bind(this, 'Main') } style={s.optionButtonSingle}>
                     <Text style={s.optionText}>Main Menu</Text>
                 </TouchableHighlight>
                 

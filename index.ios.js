@@ -29,6 +29,12 @@ import StrokeStepThree from './StrokePages/StrokeStepThree';
 import StrokeStepFour from './StrokePages/StrokeStepFour';
 import StrokeStepFive from './StrokePages/StrokeStepFive';
 import IVTPA from './StrokePages/IVTPA';
+import NonIVTPA from './StrokePages/NonIVTPA';
+import CTAngio from './StrokePages/CTAngio';
+import InclusionCriteria from './StrokePages/InclusionCriteria';
+import ExclusionCriteria from './StrokePages/ExclusionCriteria';
+import RelativeExclusionCriteria from './StrokePages/RelativeExclusionCriteria';
+import NeurologistConsult from './StrokePages/NeurologistConsult';
 
 import Sepsis from './SepsisPages/Sepsis';
 import SepsisTwo from './SepsisPages/SepsisTwo';
@@ -61,6 +67,7 @@ import EULA from './EULA';
 import HIPAA from './HIPAA';
 import BugFix from './BugFix';
 
+import Test from './Test';
 
 import Report from './Report';
 
@@ -125,6 +132,25 @@ class soraMed extends Component {
 		if (route.name == 'IVTPA') {
 				return <IVTPA navigator={navigator} />
 		}
+		if (route.name == 'NonIVTPA') {
+				return <NonIVTPA navigator={navigator} />
+		}
+		if (route.name == 'CTAngio') {
+				return <CTAngio navigator={navigator} />
+		}
+		if (route.name == 'InclusionCriteria') {
+				return <InclusionCriteria navigator={navigator} />
+		}
+		if (route.name == 'ExclusionCriteria') {
+				return <ExclusionCriteria navigator={navigator} />
+		}
+		if (route.name == 'RelativeExclusionCriteria') {
+				return <RelativeExclusionCriteria navigator={navigator} />
+		}
+		if (route.name == 'NeurologistConsult') {
+				return <NeurologistConsult navigator={navigator} />
+		}
+		
 
 
 		if (route.name == 'Sepsis') {
@@ -200,6 +226,10 @@ class soraMed extends Component {
 		
 		if (route.name == 'Report') {
 				return <Report navigator={navigator} />
+		}
+		
+		if (route.name == 'Test') {
+				return <Test navigator={navigator} />
 		}
 
 	}

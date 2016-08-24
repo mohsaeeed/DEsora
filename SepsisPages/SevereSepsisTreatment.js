@@ -119,7 +119,7 @@ class SevereSepsisTreatment extends Component {
             
               <ScrollView style={s.gridTainer}>
             
-                <View style={s.optionSetContainer}>
+                <View style={s.optionSetContainerNoBorder}>
                     <Text style={s.optionSetTitle}>Treatments for Severe Sepsis</Text>
                 </View>
                 
@@ -136,7 +136,7 @@ class SevereSepsisTreatment extends Component {
                 
                 
                 
-                // Hide Until 'Yes'
+                
                 
                 
                 

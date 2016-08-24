@@ -20,12 +20,6 @@ import {
 // Global Stylesheet
 var s = require('../global/style');
 
-var StrokeStepOneCompletion =  '0/4';
-var StrokeStepTwoCompletion =  '0/15';
-var StrokeStepThreeCompletion =  '0/5';
-var StrokeStepFourCompletion =  '0/5';
-var StrokeStepFiveCompletion =  '0/15';
-
 class Stroke extends Component {
   
   navigate(routeName) {
@@ -41,14 +35,14 @@ class Stroke extends Component {
         <View style={s.headerwrapper}>
             <View style={s.headernavigation}>
                 <View style={s.buttonWrapBack}>
-                    <TouchableHighlight onPress={ this.navigate.bind(this, 'StrokeStepFour') } style={s.backButton}>
+                    <TouchableHighlight onPress={ this.navigate.bind(this, 'Main') } style={s.backButton}>
                         <Image
                           source={require('../assets/icons/backArrow.png')}
                         />
                     </TouchableHighlight>
                 </View>
                 <View style={s.buttonWrapTitle}>
-                    <Text style={s.title}>IV TPA</Text>
+                    <Text style={s.title}>Stroke</Text>
                 </View>
                 <View style={s.buttonWrapTopButton}>
                     <TouchableHighlight onPress={ this.navigate.bind(this, 'Main') } style={s.button}>
@@ -84,11 +78,9 @@ class Stroke extends Component {
             </View>
             <TouchableOpacity onPress={ this.navigate.bind(this, 'StrokeStepOne') } style={s.optionButton}>
                 <Text style={s.optionText}>Diagnosis for Stroke</Text>
-                <Text style={s.minorText}>{StrokeStepOneCompletion}</Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={ this.navigate.bind(this, 'StrokeStepTwo') } style={s.optionButton}>
                 <Text style={s.optionText}>Pre-Treatment NIH Score</Text>
-                <Text style={s.minorText}>{StrokeStepTwoCompletion}</Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={ this.navigate.bind(this, 'StrokeStepThree') } style={s.optionButton}>
                 <Text style={s.optionText}>Step 3: Lab & Radiology</Text>

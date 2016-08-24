@@ -108,7 +108,6 @@ class VolumeStatus extends Component {
       
       
       
-        // Hide Until 'Yes'
         
         
         <View style={s.contentwrapper}>
@@ -120,9 +119,12 @@ class VolumeStatus extends Component {
             
               <ScrollView style={s.gridTainer}>
             
-                <View style={s.optionSetContainer}>
+                <View style={s.optionSetContainerNoBorder}>
                     <Text style={s.optionSetTitle}>You have two options to reassess volume status and/or tissue perfusion.</Text>
-                    <Text style={s.minorText}>Option 1</Text>
+                </View>
+                
+                <View style={s.optionSetContainerNoBorder}>
+                  <Text style={s.minorText}>Option 1</Text>
                 </View>
                     
                 <View style={s.optionSetContainer}>
@@ -137,12 +139,11 @@ class VolumeStatus extends Component {
                   </View>
                 </Form>
                  
-                 // Needs exam dropdown
                 
                 
                 
                 
-                <View style={s.optionSetContainer}>
+                <View style={s.optionSetContainerNoBorder}>
                     <Text style={s.minorText}>Option 2</Text>
                     <Text style={s.minorText}>Select two of the following</Text>
                 </View>

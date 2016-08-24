@@ -88,8 +88,8 @@ class SevereSepsis extends Component {
                 </View>
             </View>
         <ScrollView style={s.gridTainer}>
-            <View style={s.optionSetContainer}>
-                <Text style={s.optionSetTitle}>This patient has Sever Sepsis or Septic Shock</Text>
+            <View style={s.optionSetContainerNoBorder}>
+                <Text style={s.optionSetTitle}>This patient has Severe Sepsis or Septic Shock</Text>
                 <Text style={s.optionSetTitle}>TO BE COMPLETE WITHIN 3 HOURS</Text>
             </View>
             

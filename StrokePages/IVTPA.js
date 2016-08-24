@@ -60,7 +60,7 @@ class IVTPA extends Component {
                     </TouchableHighlight>
                 </View>
                 <View style={s.buttonWrapTitle}>
-                    <Text style={s.title}>Stroke</Text>
+                    <Text style={s.title}>IV TPA</Text>
                 </View>
                 <View style={s.buttonWrapTopButton}>
                     <TouchableHighlight onPress={ this.navigate.bind(this, 'Main') } style={s.button}>

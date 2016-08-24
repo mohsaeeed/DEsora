@@ -114,15 +114,15 @@ class NonSepsis extends Component {
             
               <ScrollView style={s.gridTainer}>
             
-                <View style={s.optionSetContainer}>
+                <View style={s.optionSetContainerNoBorder}>
                     <Text style={s.optionSetTitle}>It doesn't look like this patient has SIRS.</Text>
                 </View>
                 
-                <TouchableHighlight onPress={ this.navigate.bind(this, 'Main') } style={s.optionButton}>
+                <TouchableHighlight onPress={ this.navigate.bind(this, 'Main') } style={s.optionButtonSingle}>
                     <Text style={s.optionText}>Consider Other Diseases</Text>
                 </TouchableHighlight>
                 
-                <TouchableHighlight onPress={ this.navigate.bind(this, 'SepsisTwo') } style={s.optionButton}>
+                <TouchableHighlight onPress={ this.navigate.bind(this, 'SepsisTwo') } style={s.optionButtonSingle}>
                     <Text style={s.optionText}>Continue with Sepsis</Text>
                 </TouchableHighlight>
                 

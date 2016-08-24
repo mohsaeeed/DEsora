@@ -26,7 +26,7 @@ import { Form, InputField,
 // Global Stylesheet
 var s = require('../global/style');
 
-var p1SSq1 = 'Remeasure Lactate if initial was elevated';
+var p1RLq1 = 'Remeasure Lactate if initial was elevated';
 
 class RemeasureLactate extends Component {
 
@@ -117,7 +117,7 @@ class RemeasureLactate extends Component {
               <ScrollView style={s.gridTainer}>
                 
                 <View style={s.optionSetContainer}>
-                    <Text style={s.optionSetTitle}>{p1RLq4}</Text>
+                    <Text style={s.optionSetTitle}>{p1RLq1}</Text>
                 </View>
                 <Form ref='remeasureLactate' style={s.optionSetInputYN}>
                   <View style={s.yesNoContainer}>
@@ -126,7 +126,7 @@ class RemeasureLactate extends Component {
                     <Text style={s.yesNo}>Yes</Text>
                   </View>
                   
-                  // Need text input with  'mmol/L' to the right of text input
+                  
                   
                 </Form>
                 

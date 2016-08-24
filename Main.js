@@ -9,6 +9,7 @@ import React, { Component } from 'react';
 import {
   StyleSheet,
   TouchableHighlight,
+  TouchableOpacity,
   AsyncStorage,
   Text,
   Image,
@@ -83,30 +84,30 @@ class Main extends Component {
           </View>
 
           <View style={styles.buttonWrap}>
-            <TouchableHighlight onPress={ this.navigate.bind(this, 'Stroke') } style={styles.buttonTop}>
+            <TouchableOpacity onPress={ this.navigate.bind(this, 'Stroke') } style={styles.buttonTop}>
                 <Image
                   style={styles.icon}
                   source={require('./assets/mainButtonAssets/mainBtn_stroke@4x.png')}
                 />
-            </TouchableHighlight>
+            </TouchableOpacity>
           </View>
 
           <View style={styles.buttonWrap}>
-            <TouchableHighlight onPress={ this.navigate.bind(this, 'Sepsis') } style={styles.buttonBottom}>
+            <TouchableOpacity onPress={ this.navigate.bind(this, 'Sepsis') } style={styles.buttonBottom}>
                 <Image
                   style={styles.icon}
                   source={require('./assets/mainButtonAssets/mainBtn_sepsis@4x.png')}
                 />
-            </TouchableHighlight>
+            </TouchableOpacity>
           </View>
 
           <View style={styles.buttonWrap}>
-            <TouchableHighlight onPress={ this.navigate.bind(this, 'CBBreathing') } style={styles.buttonBlue}>
+            <TouchableOpacity onPress={ this.navigate.bind(this, 'CBBreathing') } style={styles.buttonBlue}>
                 <Image
                   style={styles.icon}
                   source={require('./assets/mainButtonAssets/mainBtn_codeBlue@4x.png')}
                 />
-            </TouchableHighlight>
+            </TouchableOpacity>
           </View>
         </View>
 
@@ -125,7 +126,7 @@ class Main extends Component {
 
                 </View>
                 <View style={styles.buttonWrapFoot}>
-                    <TouchableHighlight onPress={ this.navigate.bind(this, 'Report') } style={styles.buttonbottom}>
+                    <TouchableHighlight onPress={ this.navigate.bind(this, 'Test') } style={styles.buttonbottom}>
                         <Image
                           style={styles.bottomIcon}
                           source={require('./assets/icons/nav/nav-item2@2x.png')}

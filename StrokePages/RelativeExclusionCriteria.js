@@ -58,22 +58,8 @@ class RelativeExclusionCriteria extends Component {
                         />
                     </TouchableHighlight>
                 </View>
-                <View style={s.buttonWrapTitle}>
+                <View style={s.buttonWrapTitleFull}>
                     <Text style={s.title}>Relative Exclusion Criteria</Text>
-                </View>
-                <View style={s.buttonWrapTopButton}>
-                    <TouchableHighlight onPress={ this.navigate.bind(this, 'Main') } style={s.button}>
-                        <Image
-                          source={require('../assets/icons/HomeIcon.png')}
-                        />
-                    </TouchableHighlight>
-                </View>
-                <View style={s.buttonWrapTopButton}>
-                    <TouchableHighlight onPress={ this.navigate.bind(this, 'Report') } style={s.button}>
-                        <Image
-                          source={require('../assets/icons/SOFAbutton.png')}
-                        />
-                    </TouchableHighlight>
                 </View>
             </View>
         </View>
@@ -89,7 +75,6 @@ class RelativeExclusionCriteria extends Component {
             
                 <View style={s.optionSetContainer}>
                     <Text style={s.optionSetTitle}>{p2eCq1}</Text>
-                    <Text style={s.minorText}>{p2eCq1a}</Text>
                 </View>
                 <Form ref='headTrauma' style={s.optionSetInputYN}>
                   <View style={s.yesNoContainer}>
@@ -101,7 +86,6 @@ class RelativeExclusionCriteria extends Component {
                 
                 <View style={s.optionSetContainer}>
                     <Text style={s.optionSetTitle}>{p2eCq2}</Text>
-                    <Text style={s.minorText}>{p2eCq2a}</Text>
                 </View>
                 <Form ref='arterialPuncture' style={s.optionSetInputYN}>
                   <View style={s.yesNoContainer}>
@@ -135,7 +119,6 @@ class RelativeExclusionCriteria extends Component {
                 
                 <View style={s.optionSetContainer}>
                     <Text style={s.optionSetTitle}>{p2eCq5}</Text>
-                    <Text style={s.minorText}>{p2eCq5a}</Text>
                 </View>
                 <Form ref='hxHemorrhage' style={s.optionSetInputYN}>
                   <View style={s.yesNoContainer}>
@@ -146,8 +129,18 @@ class RelativeExclusionCriteria extends Component {
                 </Form>
                 
                 <View style={s.optionSetContainer}>
-                    <Text style={s.optionSetTitle}>{p2eCq5}</Text>
-                    <Text style={s.minorText}>{p2eCq5a}</Text>
+                    <Text style={s.optionSetTitle}>{p2eCq6}</Text>
+                </View>
+                <Form ref='myocardialInfarction' style={s.optionSetInputYN}>
+                  <View style={s.yesNoContainer}>
+                    <Text style={s.yesNo}>No</Text>
+                    <SwitchField label='' ref="myocardialInfarction"/>
+                    <Text style={s.yesNo}>Yes</Text>
+                  </View>
+                </Form>
+                
+                <View style={s.optionSetContainer}>
+                    <Text style={s.optionSetTitle}>{p2eCq7}</Text>
                 </View>
                 <Form ref='nonePresent' style={s.optionSetInputYN}>
                   <View style={s.yesNoContainer}>
