@@ -20,6 +20,10 @@ import {
   AppRegistry,
 } from 'react-native';
 
+import { Form,
+  Separator,InputField, LinkField,
+  SwitchField, PickerField, PickerFieldSettings, DatePickerField, TimePickerField
+} from 'react-native-form-generator';
 
 // Global Stylesheet
 var s = require('./global/style');
@@ -74,11 +78,26 @@ var h6                  = 18;
 
 class Settings extends Component {
 
+  constructor(props){
+    super(props);
+    this.state = {
+      formData:{}
+    }
+  }
+
   navigate(routeName) {
     this.props.navigator.push({
       name: routeName
     });
   }
+  
+  handleFormChange(formData){
+    this.setState({formData:formData})
+    this.props.onFormChange && this.props.onFormChange(formData);
+  }
+  handleFormFocus(e, component){
+    //console.log(e, component);
+  }  
 
   render() {
     return (
@@ -105,28 +124,49 @@ class Settings extends Component {
 
                     <View style={s.optionSetContainer06}>
                         <View style={s.gridForm}>
-                            <View style={s.gridFormThin}>
-                                <Text style={s.formText}>Email</Text>
-                            </View>
-                            <View style={s.gridFormWide}>
-                                <Text style={s.formText}>julian_heidenreich@gmail.com</Text>
-                            </View>
+                                <Form                              
+                                    ref='emailForm'
+                                    style={s.inputForm02}
+                                    onFocus={this.handleFormFocus.bind(this)}
+                                    onChange={this.handleFormChange.bind(this)}>
+                                        <InputField
+                                        ref='email'
+                                        label='Email'
+                                        placeholder='email@address.com'
+                                        style={s.formText02}/>
+                                </Form>
                         </View>
                         <View style={s.gridForm}>
-                            <View style={s.gridFormThin}>
-                                <Text style={s.formText}>Password</Text>
-                            </View>
-                            <View style={s.gridFormWide}>
-                                <Text style={s.formText}>******</Text>
-                            </View>
+                                <Form                              
+                                    ref='passwordForm'
+                                    style={s.inputForm02}
+                                    onFocus={this.handleFormFocus.bind(this)}
+                                    onChange={this.handleFormChange.bind(this)}>
+                                        <InputField
+                                        ref='password'
+                                        label='Password'
+                                        placeholder='*******'
+                                        style={s.formText02}/>
+                                </Form>
                         </View>
                         <View style={s.gridFormBorderless}>
-                            <View style={s.gridFormThin}>
-                                <Text style={s.formText}>Timezone</Text>
-                            </View>
-                            <View style={s.gridFormWide}>
-                                <Text style={s.formText}>-6 GMT (Automatic)</Text>
-                            </View>
+                          <Form
+                              ref='timezoneForm'
+                              //style={s.inputForm}
+                              onFocus={this.handleFormFocus.bind(this)}
+                              onChange={this.handleFormChange.bind(this)}>                          
+                                  <PickerFieldSettings
+                                      //style={s.formText02}
+                                      ref='timeZone'
+                                      label='Timezone'
+                                      options={{
+                                        "": '',
+                                        timezone01: 'CST  UTC - 6',
+                                        timezone02: 'EST  UTC - 5',
+                                        timezone03: 'MST UTC - 8',
+                                        timezone04: 'PST UTC -8',
+                                  }}/>
+                          </Form>
                         </View>
                     </View>
                     <View style={s.optionSetContainer07}>
@@ -191,7 +231,7 @@ class Settings extends Component {
                             </View>
                         </View>
                         </TouchableHighlight>
-                        <TouchableHighlight onPress={ this.navigate.bind(this, 'Main') } style={styles.button}>
+                        <TouchableHighlight onPress={ this.navigate.bind(this, 'Feedback') } style={styles.button}>
                             <View style={s.gridFormBorderless}>
                                 <View style={s.gridFormThin}>
                                     <Text style={s.formTextOpaque}>Send Us Feedback</Text>

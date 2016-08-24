@@ -15,6 +15,7 @@ import {
   Dimensions,
   View,
   ScrollView,
+  Modal,
 } from 'react-native';
 
 // Global Stylesheet
@@ -73,7 +74,7 @@ var Accordion = require('react-native-accordion');
 
 
 var accordHeader01 = (
-  <View style={s.optionSetContainer}>
+  <View style={s.optionSetContainer14}>
       <View style={s.optionSetContainer05}>
           <View style={s.optionSetContainer04}>
               <Text style={s.optionSetFontBold}>Code Blue Team A</Text>
@@ -96,7 +97,7 @@ var accordHeader01 = (
 );
 
 var accordHeader02 = (
-  <View style={s.optionSetContainer}>
+  <View style={s.optionSetContainer14}>
       <View style={s.optionSetContainer05}>
           <View style={s.optionSetContainer04}>
               <Text style={s.optionSetFontBold}>TMC Emer. Group</Text>
@@ -158,7 +159,7 @@ var accordContent01 = (
 
 var accordContent02 = (
   <View style={s.optionSetContainer08}>
-    <View style={s.optionSetContainer06}>
+    <View style={s.optionSetContainer09}>
         <View style={s.gridForm}>
             <View style={s.gridFormThin}>
                 <Text style={s.formText}>Margaret Doyle</Text>
@@ -219,7 +220,14 @@ class EventMan extends Component {
     });
   }
 
+  constructor(props) {
+    super(props);
+    this.state = {modalVisible: false};
+  }
 
+  setModalVisible(visible) {
+    this.setState({modalVisible: visible});
+  }
 
   render() {
     return (
@@ -245,12 +253,47 @@ class EventMan extends Component {
         <View style={s.contentwrapper}>
             <ScrollView style={s.gridTainer}>
                 <View style={s.optionSetContainer11}>
-                    <View style={s.optionSetContainer03}>
-                        <View style={s.buttonWrap}>
-                            <Image
-                              source={require('./assets/icons/nav/btn_createGroup@4x.png')}
-                            />
-                        </View>
+                    <View style={s.optionSetContainer15}>
+                        <Modal
+                          animationType={"slide"}
+                          transparent={true}
+                          visible={this.state.modalVisible}
+                          onRequestClose={() => {alert("Group has been created.")}}
+                          >
+                         <View style={s.modalSetContainer01}>
+                          <View style={s.modalSetContainer02}>
+                            <View style={s.modalHeader01}>
+                                <Text style={s.optionSetFontBoldLight}>Create Group</Text>
+                            </View>
+                            <View style={s.modalContent01}>
+                                <View style={s.optionSetContainer08}>
+                                    <Image
+                                      source={require('./assets/icons/nav/navMap02.png')}
+                                    />
+                                </View>
+                            </View>
+                
+                            <TouchableHighlight onPress={() => {
+                              this.setModalVisible(!this.state.modalVisible)
+                            }}>
+                              <View style={s.modalButton01}>
+                                <Text>Hide Modal</Text>
+                              </View>
+                            </TouchableHighlight>                                        
+                          </View>
+                         </View>
+                        </Modal>
+                
+                        <TouchableHighlight onPress={() => {
+                          this.setModalVisible(true)
+                        }}>
+                            <View style={s.buttonWrap}>
+                                <Image
+                                  source={require('./assets/icons/nav/btn_createGroup@4x.png')}
+                                />
+                            </View>                          
+                        </TouchableHighlight>                    
+
                         <View style={s.buttonWrap}>
                             <Image
                               source={require('./assets/icons/nav/btn_joinGroup@4x.png')}
@@ -258,7 +301,7 @@ class EventMan extends Component {
                         </View>
                     </View>
                 </View>
-
+                          
                 <View style={s.optionSetContainer12}>
                     <View style={s.gridFormBorderless}>
                         <View style={s.gridFormThin}>

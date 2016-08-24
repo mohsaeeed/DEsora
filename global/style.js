@@ -532,35 +532,41 @@ module.exports = StyleSheet.create({
     color: primaryTextLight,
     fontWeight: bold,
   },
-  optionSetFontBoldLight02: {
+    optionSetFontBoldLight02: {
     fontSize: p16,
     color: tertiaryTextLight,
     fontWeight: bold,
   },
-  formText: {
+    formText: {
     fontSize: p,
     color: primaryTextDark,
     flex: 1,
+    
   },
-  formTextIndent: {
+  
+    formTextIndent: {
     fontSize: p,
     color: primaryTextDark,
     flex: 1,
     alignItems: 'flex-start',
     paddingLeft: 10,
+    
   },
-  formTextIndent02: {
+  
+    formTextIndent02: {
     fontSize: p,
     color: primaryTextDark,
     flex: 1,
     alignItems: 'flex-start',
     paddingLeft: 30,
+    
   },
+  
   formTextOpaque: {
     fontSize: p,
     color: 'rgba(0,43,55,0.78)',
   },
-  optionSetContainer02: {
+   optionSetContainer02: {
     alignSelf: 'stretch',
     alignItems: 'flex-start',
     justifyContent: 'center',
@@ -587,19 +593,19 @@ module.exports = StyleSheet.create({
     paddingTop: 15,
     paddingBottom: 15,
   },
-  optionSetContainer04: {
+    optionSetContainer04: {
     alignSelf: 'stretch',
     alignItems: 'flex-start',
     justifyContent: 'center',
     width: 150,
   },
-  optionSetContainer05: {
+    optionSetContainer05: {
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
     width: width,
   },
-  optionSetContainer06: {
+    optionSetContainer06: {
     flex: 1,
     borderWidth: 2,
     borderColor: 'lightgray',
@@ -608,7 +614,7 @@ module.exports = StyleSheet.create({
     justifyContent: 'center',
     paddingBottom: 10,
   },
-  optionSetContainer07: {
+    optionSetContainer07: {
     borderWidth: 2,
     borderColor: 'rgba(0,43,55,0.87)',
     borderRadius: 7,
@@ -620,24 +626,25 @@ module.exports = StyleSheet.create({
     paddingLeft: 15,
     paddingRight: 15,
   },
-  optionSetContainer08: {
+    optionSetContainer08: {
     flexDirection: 'row',
-    alignItems: 'flex-start',
-    justifyContent: 'center',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
     flex: 1,
   },
-  optionSetContainer09: {
+    optionSetContainer09: {
     flex: 1,
     borderBottomWidth: 2,
     borderLeftWidth: 2,
     borderRightWidth: 2,
     borderColor: 'lightgray',
-    borderRadius: 7,
+    borderBottomLeftRadius: 7,
+    borderBottomRightRadius: 7,
     margin: 10,
     justifyContent: 'center',
     paddingBottom: 10,
   },
-  optionSetContainer10: {
+    optionSetContainer10: {
     borderWidth: 2,
     borderColor: 'rgba(205,74,0,0.87)',
     backgroundColor: 'rgba(205,74,0,1)',
@@ -650,7 +657,7 @@ module.exports = StyleSheet.create({
     paddingLeft: 15,
     paddingRight: 15,
   },
-  optionSetContainer11: {
+    optionSetContainer11: {
     flex: 1,
     borderBottomWidth: 2,
     borderColor: 'lightgray',
@@ -659,7 +666,7 @@ module.exports = StyleSheet.create({
     paddingBottom: 10,
     flexDirection: 'column',
   },
-  optionSetContainer12: {
+    optionSetContainer12: {
     borderWidth: 2,
     borderColor: 'rgba(0,43,55,0.87)',
     borderRadius: 7,
@@ -672,25 +679,90 @@ module.exports = StyleSheet.create({
     paddingLeft: 15,
     paddingRight: 15,
   },
-  optionSetContainer13: {
+  
+    optionSetContainer13: {
     flex: 1,
     margin: 10,
     justifyContent: 'center',
     paddingBottom: 10,
   },
-  buttonWrapRow: {
+  
+    optionSetContainer14: {
+    borderWidth: 2,
+    borderColor: 'lightgray',
+    //borderTopLeftRadius: 7,
+    //borderTopRightRadius: 7,
+    borderRadius: 7,
+    margin: 10,
+    marginBottom: 0,
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+    paddingTop: 10,
+    paddingBottom: 10,
+    paddingLeft: 15,
+    paddingRight: 15,
+  },
+  
+    optionSetContainer15: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    flex: 1,
+    paddingTop: 15,
+    paddingLeft: 12,
+  },
+  
+    modalSetContainer01: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  
+    modalSetContainer02: {
+    borderWidth: 2,
+    borderColor: 'lightgray',
+    borderRadius: 3,
+    backgroundColor: 'rgba(238, 232, 212, 1)',
+    width: 325,
+    height: 400,
+  },
+  
+    modalHeader01: {
+    flexDirection: 'row',
+    height: 50,
+    backgroundColor: baseColor,
+    alignItems: 'center',
+    justifyContent: 'center', 
+    },
+    
+    modalContent01: {
+    flex: 1,
+    flexDirection: 'row',
+    backgroundColor: gray,
+    justifyContent: 'center',
+    alignItems: 'center',
+    },
+    
+    modalButton01: {
+    flex: 1,
+    flexDirection: 'row',
+    height: 50,
+    backgroundColor: dark,
+    },
+  
+    buttonWrapRow: {
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'flex-end',
     flex: 1,
   },
-  buttonRow: {
+    buttonRow: {
     paddingLeft: 5,
     paddingRight: 5,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  gridForm: {
+    gridForm: {
     flexDirection: 'row',
     borderColor: 'gray',
     borderBottomWidth: 0.75,
@@ -698,14 +770,14 @@ module.exports = StyleSheet.create({
     paddingTop: 1,
     flex: 1,
   },
-  gridFormBorderless: {
+    gridFormBorderless: {
     flexDirection: 'row',
-    borderColor: 'gray',
     paddingBottom: 1,
     paddingTop: 1,
     flex: 1,
+    alignItems: 'center',
   },
-  gridFormWide: {
+    gridFormWide: {
     justifyContent: 'center',
     alignItems: 'flex-end',
     borderColor: 'gray',
@@ -721,30 +793,34 @@ module.exports = StyleSheet.create({
     paddingTop: 10,
     paddingBottom: 10,
   },
-  gridFormWideLeft: {
+    gridFormWideLeft: {
     justifyContent: 'center',
     alignItems: 'flex-start',
     paddingLeft: 10,
     paddingTop: 10,
     paddingBottom: 10,
   },
-  EULAFormBorderless: {
+  
+    EULAFormBorderless: {
     flexDirection: 'row',
     borderColor: 'gray',
     paddingBottom: 15,
     paddingTop: 1,
     flex: 1,
   },
-  inputForm: {
+  
+    inputForm: {
     flex: 1,
     alignItems: 'flex-start',
     backgroundColor: 'rgba(238, 232, 212, 1)',   
   },
-  inputForm02: {
+  
+    inputForm02: {
     flex: 1,
     backgroundColor: 'rgba(238, 232, 212, 1)',
     },
-  formText02: {
+    
+    formText02: {
     fontSize: p,
     color: primaryTextDark,
     flex: 1,
