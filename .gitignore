@@ -1,6 +1,20 @@
-# General
-.DS_Store
-
-# User-specific stuff:
 .idea
 .idea/*
+
+.DS_Store
+*.DS_Store
+*/.DS_Store
+
+ios/soraMed.xcodeproj/project.xcworkspace/xcuserdata/cbeas.xcuserdatad/
+ios/soraMed.xcodeproj/xcuserdata/cbeas.xcuserdatad/
+node_modules/react-native-sqlite-storage/src/ios/SQLite.xcodeproj/xcuserdata/cbeas.xcuserdatad/
+node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj/xcuserdata/cbeas.xcuserdatad/
+node_modules/react-native/Libraries/Geolocation/RCTGeolocation.xcodeproj/xcuserdata/cbeas.xcuserdatad/
+node_modules/react-native/Libraries/Image/RCTImage.xcodeproj/xcuserdata/cbeas.xcuserdatad/
+node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj/xcuserdata/cbeas.xcuserdatad/
+node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj/xcuserdata/cbeas.xcuserdatad/
+node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj/xcuserdata/cbeas.xcuserdatad/
+node_modules/react-native/Libraries/Text/RCTText.xcodeproj/xcuserdata/cbeas.xcuserdatad/
+node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj/xcuserdata/cbeas.xcuserdatad/
+node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj/xcuserdata/cbeas.xcuserdatad/
+node_modules/react-native/React/React.xcodeproj/xcuserdata/cbeas.xcuserdatad/
